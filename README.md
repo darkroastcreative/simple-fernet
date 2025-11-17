@@ -46,7 +46,7 @@ Content coming soon!
 2. Generate a Fernet key using the `fernet` module of the `cryptography` Python package. You can copy and paste the "Generate Fernet Key" script provided in this README's appendix into a new `.py` file and run it to do this quickly.
 3. Copy the generated Fernet key.
 4. Open the Windows Start Menu, search for "Edit the system environment variables," and select the matching search result.
-5. In the System Properties window that opens, click the "Envrionment Variables" button.
+5. In the System Properties window that opens, click the "Environment Variables" button.
 6. Click the "New" button in the "System variables" section.
 7. In the New System Variable window that appears, give the new environment variable a name and paste the Fernet key you generated in Step 2 into the "Variable value" field.
 8. Click "OK" until all three windows that you opened to edit the system's environment variables are closed.
