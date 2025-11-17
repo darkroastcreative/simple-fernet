@@ -98,7 +98,7 @@ class SimpleFernet:
             
             # Deserialize the data with pickle. This should return the data to
             # its original, pre-encryption type.
-            decrypted_data = pickle.loads(data=decrypted_data)
+            decrypted_data = pickle.loads(decrypted_data)
         else:
             raise TypeError('encrypted_data must be either bytes or str.')
             
