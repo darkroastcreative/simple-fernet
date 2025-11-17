@@ -25,6 +25,7 @@ For guidance on how to complete these manual steps (if you do not already have a
 ### In Development
 
 - Implement `encrypt()` method.
+- Write initial documentation.
 
 ### Queued for Development
 
