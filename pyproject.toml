@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "simple_fernet"
-version = "0.3.2"
+version = "1.0.0"
 authors = [
   { name="David Urso", email="david@darkroastcreative.co" },
 ]
@@ -15,7 +15,7 @@ description = "A Python package that streamlines the process of encrypting and d
 keywords = ["fernet", "encryption", "symmetric encryption"]
 readme = "README.md"
 classifiers = [
-    "Development Status :: 4 - Beta",
+    "Development Status :: 5 - Production/Stable",
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent",
     "License :: OSI Approved :: GNU Affero General Public License v3",
