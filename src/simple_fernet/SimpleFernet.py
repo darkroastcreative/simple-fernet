@@ -13,6 +13,11 @@ class SimpleFernet:
         ## Arguments
         - `key_environment_variable`: A string representing the name of an
         environment variable that contains a Fernet key.
+        
+        ## Notes
+        - It is assumed that you have already created a Fernet key and stored
+        its value in an environment variable. This is due to limitations related
+        to setting environment variables with Python code.
         """
         self.key_environment_variable = key_environment_variable
 
@@ -35,6 +40,9 @@ class SimpleFernet:
         
         ## Returns
         A `bytes` object representing the encrypted data.
+        
+        ## Notes
+        - The data passed into this method must implement the 
         """
         # TODO: Need to determine the best way to convert most/all objects to bytes for encryption.
         pass
@@ -47,13 +55,13 @@ class SimpleFernet:
         decrypt with Fernet.
         
         ## Returns
-        A `bytes` object reprenting the decrypted data.
+        A `bytes` object representing the decrypted data.
         
         ## Notes
         - The value passed in as `encrypted_data` must be of type `bytes` or
         `str`. If not, a `TypeError` will be raised.
         - This function does not perform any type conversion on the decrypted
-        data. Rather, it returns the decrypted data as `bytes` ansd leaves the
+        data. Rather, it returns the decrypted data as `bytes` and leaves the
         responsibility of converting the data to the user. This is done
         intentionally to ensure the data is not converted to the wrong type
         after decryption.
