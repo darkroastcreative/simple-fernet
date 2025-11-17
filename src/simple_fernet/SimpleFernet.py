@@ -40,9 +40,6 @@ class SimpleFernet:
         
         ## Returns
         A `bytes` object representing the encrypted data or `None`
-        
-        ## Notes
-        - The data passed into this method must implement the 
         """
         # Declare and initialize an object to represent the encrypted data. This
         # variable is initialized to `None` in case there is some issue during
