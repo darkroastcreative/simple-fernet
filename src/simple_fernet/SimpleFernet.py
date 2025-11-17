@@ -40,7 +40,8 @@ class SimpleFernet:
         - `data`: The data to be encrypted.
         
         ## Returns
-        A `bytes` object representing the encrypted data or `None`
+        A `bytes` object representing the encrypted data or `None` (if the
+        encryption operation failed for some reason).
         """
         # Declare and initialize an object to represent the encrypted data. This
         # variable is initialized to `None` in case there is some issue during
@@ -64,7 +65,8 @@ class SimpleFernet:
         decrypt with Fernet.
         
         ## Returns
-        The decrypted data or `None` (if the decryption operation failed for some reason).
+        The decrypted data or `None` (if the decryption operation failed for
+        some reason).
         
         ## Notes
         - The value passed in as `encrypted_data` must be of type `bytes` or
