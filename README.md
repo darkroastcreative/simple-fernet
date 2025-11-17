@@ -78,17 +78,16 @@ A `bytes` object representing the encrypted data or `None` (if the encryption op
 
 ### `decrypt()` Method
 
-Decrypts the provided encrypted data using Fernet and returns it as the decrypted `bytes` value.
+Decrypts the provided encrypted data using Fernet and returns it.
 
 #### Arguments
 
-- `encrypted_data`: A `bytes` or `str` value representing data encrypted with Fernet.
+- `encrypted_data`: A `bytes` or `str` value representing the data to decrypt with Fernet.
 
 #### Returns
 
-A `bytes` object representing the decrypted data.
+The decrypted data or `None` (if the decryption operation failed for some reason).
 
 #### Notes
 
 - The value passed in as `encrypted_data` must be of type `bytes` or `str`. If not, a `TypeError` will be raised.
-- This function does not perform any type conversion on the decrypted data. Rather, it returns the decrypted data as `bytes` and leaves the responsibility of converting the data to the user. This is done intentionally to ensure the data is not converted to the wrong type after decryption.
