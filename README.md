@@ -19,17 +19,14 @@ For guidance on how to complete these manual steps (if you do not already have a
 ## Features
 
 - Initialize instance of `SimpleFernet`, enabling encryption and decryption operations using a Fernet key stored in a user-provided environment variable.
+- Implement `encrypt()` method.
 
 ## 1.0.0 Roadmap
 
 ### In Development
 
-- Implement `encrypt()` method.
-- Write initial documentation.
-
-### Queued for Development
-
 - Implement `decrypt()` method.
+- Write initial documentation.
 
 ## Ideas for a Future Release
 

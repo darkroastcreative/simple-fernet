@@ -32,22 +32,33 @@ class SimpleFernet:
             except:
                 raise ValueError(f'The Fernet key in the environment variable "{self.key_environment_variable}" is invalid. Please confirm the value is a valid Fernet key and try again.')
     
-    def encrypt(self, data) -> bytes:
+    def encrypt(self, data) -> bytes | None:
         """Converts the provided data to bytes and encrypts it using Fernet.
         
         ## Arguments
         - `data`: The data to be encrypted.
         
         ## Returns
-        A `bytes` object representing the encrypted data.
+        A `bytes` object representing the encrypted data or `None`
         
         ## Notes
         - The data passed into this method must implement the 
         """
-        # TODO: Need to determine the best way to convert most/all objects to bytes for encryption.
-        pass
+        # Declare and initialize an object to represent the encrypted data. This
+        # variable is initialized to `None` in case there is some issue during
+        # the encryption process that prevents the data from being encrypted as
+        # expected.
+        encrypted_data: bytes | None = None
+        
+        # Serialize the provided data to a byte stream (`bytes`).
+        data_bytes: bytes = pickle.dumps(data)
+        
+        # Encrypt the serialized data.
+        encrypted_data = Fernet(key=os.getenv(self.key_environment_variable)).encrypt(data_bytes)
+        
+        return encrypted_data
     
-    def decrypt(self, encrypted_data: bytes|str) -> bytes:
+    def decrypt(self, encrypted_data: bytes | str):
         """Decrypts the provided encrypted data using Fernet.
         
         ## Arguments
