@@ -15,7 +15,7 @@ description = "A Python package that streamlines the process of encrypting and d
 keywords = ["fernet", "encryption", "symmetric encryption"]
 readme = "README.md"
 classifiers = [
-    "Development Status :: 3 - Alpha",
+    "Development Status :: 4 - Beta",
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent",
     "License :: OSI Approved :: GNU Affero General Public License v3",
