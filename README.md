@@ -38,7 +38,10 @@ If you have any feedback or suggestions to improve this guide, please don't hesi
 
 ### macOS and Linux
 
-Content coming soon!
+1. Install [the `cryptography` Python package](https://pypi.org/project/cryptography). On most systems, you can use `python -m pip install cryptography` to accomplish this.
+2. Generate a Fernet key using the `fernet` module of the `cryptography` Python package. You can copy and paste the "Generate Fernet Key" script provided in this README's appendix into a new `.py` file and run it to do this quickly.
+3. Copy the generated Fernet key.
+4. ==ADD REMAINING STEPS HERE!!!==
 
 ### Windows
 
