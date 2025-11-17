@@ -66,7 +66,7 @@ An initialized instance of the `SimpleFernet` class with a reference to the envi
 
 ### `encrypt()` Method
 
-Converts the provided data to bytes, encrypts it using Fernet, and returns the encrypted data.
+Converts the provided data to `bytes`, encrypts it using Fernet, and returns the encrypted data as `bytes`.
 
 #### Arguments
 
@@ -74,11 +74,7 @@ Converts the provided data to bytes, encrypts it using Fernet, and returns the e
 
 #### Returns
 
-A `bytes` object representing the encrypted data.
-
-#### Notes
-
-- Something goes here.
+A `bytes` object representing the encrypted data or `None` (if the encryption operation failed for some reason).
 
 ### `decrypt()` Method
 
