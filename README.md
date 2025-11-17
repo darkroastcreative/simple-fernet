@@ -12,7 +12,7 @@ The first version of this tool is actively being developed, and as such should b
 
 Use of `simple-fernet` requires that Fernet keys are both generated and stored in environment variables manually. This is due to limitations around interfacing with system environment variables through Python, especially without requesting or providing privileged access.
 
-The development team is investigating ways to eliminate the need for these manual steps and will implement a solution if found. There are plans to develop a small companion tool to aid in the process of generating Fernet keys while this research is conducted.
+Package maintainers are investigating ways to eliminate the need for these manual steps and will implement a solution if found. There are plans to develop a small companion tool to aid in the process of generating Fernet keys while this research is conducted.
 
 For guidance on how to complete these manual steps (if you do not already have a Fernet key stored in environment variables), see the Quick Start below.
 
