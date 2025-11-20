@@ -38,7 +38,16 @@ If you have any feedback or suggestions to improve this guide, please don't hesi
 
 ### macOS and Linux
 
-Content coming soon!
+1. Install [the `cryptography` Python package](https://pypi.org/project/cryptography). On most systems, you can use `python -m pip install cryptography` to accomplish this.
+2. Generate a Fernet key using the `fernet` module of the `cryptography` Python package. You can copy and paste the "Generate Fernet Key" script provided in this README's appendix into a new `.py` file and run it to do this quickly.
+3. Copy the generated Fernet key.
+4. Open the profile file for your shell of choice (e.g., `~/.bash_profile`/`~/.bashrc` for Bash or `~/.zprofile`/`~/.zshrc` for Zsh).
+5. Add a new line following like `export ENV_VARIABLE_NAME="FERNET KEY"`, where `ENV_VARIABLE_NAME` is the name of your environment variable and `FERNET KEY` is the Fernet key you generated in step 2.
+6. Save and close the profile file.
+7. Install [the `simple-fernet` Python package]() using a command like `python -m pip install simple-fernet`.
+8. In your Python code (that you want to use `simple-fernet` in), add the following import statement: `from simple_fernet import SimpleFernet`
+9. Initialize an instance of the `SimpleFernet` class, passing in the name of the environment variable you created as an argument (e.g., `sf = SimpleFernet('TEST_FERNET_KEY)`).
+10. Call the `encrypt()` and `decrypt()` methods of your `SimpleFernet` instance as needed to encrypt and decrypt data with the Fernet key you created.
 
 ### Windows
 
